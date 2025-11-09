@@ -144,6 +144,45 @@ Return ONLY valid JSON.
             return {}
 
 
+class GeminiProvider(LLMProvider):
+    """Google Gemini API"""
+    
+    def __init__(self, api_key: str):
+        try:
+            import google.generativeai as genai
+            genai.configure(api_key=api_key)
+            self.client = genai.GenerativeModel('gemini-1.5-flash')
+        except Exception as e:
+            logger.error(f"Failed to initialize Gemini: {e}")
+            raise
+    
+    def generate_text(self, prompt: str) -> str:
+        try:
+            response = self.client.generate_content(prompt)
+            return response.text
+        except Exception as e:
+            logger.error(f"Gemini generation failed: {e}")
+            raise
+    
+    def extract_json(self, prompt: str, schema: Optional[Dict] = None) -> Dict:
+        json_prompt = f"""{prompt}
+
+You MUST return ONLY valid JSON. No markdown, no extra text.
+{f"Schema: {json.dumps(schema, indent=2)}" if schema else ""}"""
+        
+        try:
+            response = self.generate_text(json_prompt)
+            response = response.strip()
+            if response.startswith("```"):
+                response = response.split("```")[1]
+                if response.startswith("json"):
+                    response = response[4:]
+            return json.loads(response.strip())
+        except json.JSONDecodeError as e:
+            logger.error(f"JSON parsing failed: {e}")
+            return {}
+
+
 def get_llm(provider_name: str, api_key: str) -> LLMProvider:
     """Factory to get LLM provider"""
     
@@ -151,9 +190,12 @@ def get_llm(provider_name: str, api_key: str) -> LLMProvider:
         "mistral": lambda key: MistralProvider(key),
         "claude": lambda key: ClaudeProvider(key),
         "openai": lambda key: OpenAIProvider(key),
+        "gemini": lambda key: GeminiProvider(key),
     }
     
     if provider_name not in providers:
         raise ValueError(f"Unknown provider: {provider_name}")
     
     return providers[provider_name](api_key)
+
+
