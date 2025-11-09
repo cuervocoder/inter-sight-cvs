@@ -1,0 +1,24 @@
+{
+  "name": "Alice Johnson",
+  "email": "alice@example.com",
+  "degree": "MS Computer Science",
+  "university": "MIT",
+  "years_experience": 7,
+  "current_role": "Senior ML Engineer",
+  "experience": [
+    {
+      "company": "TechCorp",
+      "role": "Senior ML Engineer",
+      "duration": "2 years",
+      "description": "Led team of 5. Improved ML model performance 40%. Published 3 research papers."
+    },
+    {
+      "company": "StartupXYZ",
+      "role": "ML Engineer",
+      "duration": "3 years",
+      "description": "Built ML pipeline serving 10M+ users. Implemented recommendation system. Mentored junior engineers."
+    }
+  ],
+  "skills": ["Python", "TensorFlow", "Leadership", "ML"],
+  "soft_skills": ["Leadership", "Communication", "Problem-Solving", "Learning Mindset"]
+}

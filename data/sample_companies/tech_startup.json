@@ -1,0 +1,24 @@
+{
+  "name": "TechStartup XYZ",
+  "mission": "Democratize AI and make it accessible to everyone",
+  "vision": "A world where AI augments human capability",
+  "values": [
+    "Innovation",
+    "Ownership",
+    "Collaboration",
+    "Excellence",
+    "Learning"
+  ],
+  "focus_skills": [
+    "Leadership",
+    "Problem-Solving",
+    "Communication",
+    "Adaptability",
+    "Learning Mindset"
+  ],
+  "role": "Senior Engineer",
+  "role_description": "We're looking for a seasoned engineer who can drive innovation, mentor junior developers, and help scale our AI platform",
+  "team_size": 25,
+  "founded": 2020,
+  "stage": "Series A"
+}

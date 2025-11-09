@@ -1,0 +1,43 @@
+{
+  "name": "Bob Chen",
+  "email": "bob.chen@example.com",
+  "phone": "+1-555-0101",
+  "degree": "BS Computer Science",
+  "university": "Stanford",
+  "graduation_year": 2020,
+  "years_experience": 5,
+  "current_role": "Software Engineer",
+  "current_company": "Google",
+  "experience": [
+    {
+      "company": "Google",
+      "role": "Software Engineer",
+      "duration_years": 3,
+      "duration_text": "3 years",
+      "description": "Built infrastructure serving 1M+ QPS. Led migration to new system. Reduced latency by 30%.",
+      "impact": "High"
+    },
+    {
+      "company": "EarlyStage Startup",
+      "role": "Backend Engineer",
+      "duration_years": 2,
+      "duration_text": "2 years",
+      "description": "Built MVP backend in 6 weeks. Scaled from 0 to 100k users. Full ownership of infrastructure.",
+      "impact": "High"
+    }
+  ],
+  "skills": [
+    "Python",
+    "Go",
+    "Kubernetes",
+    "AWS",
+    "Systems Design",
+    "Backend"
+  ],
+  "languages": [
+    "English",
+    "Mandarin",
+    "Cantonese"
+  ],
+  "certifications": []
+}

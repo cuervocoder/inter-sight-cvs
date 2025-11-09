@@ -1,0 +1,43 @@
+{
+  "name": "Carol Rodriguez",
+  "email": "carol.rodriguez@example.com",
+  "phone": "+1-555-0102",
+  "degree": "MBA",
+  "university": "Harvard Business School",
+  "graduation_year": 2018,
+  "years_experience": 8,
+  "current_role": "Director of Product",
+  "current_company": "Meta",
+  "experience": [
+    {
+      "company": "Meta",
+      "role": "Director of Product",
+      "duration_years": 3,
+      "duration_text": "3 years",
+      "description": "Led $50M product line. Managed 15+ person cross-functional team. Drove 40% revenue growth.",
+      "impact": "High"
+    },
+    {
+      "company": "McKinsey & Company",
+      "role": "Senior Associate",
+      "duration_years": 5,
+      "duration_text": "5 years",
+      "description": "Led strategy projects for Fortune 500 companies. Built and managed teams of 5-10 people.",
+      "impact": "High"
+    }
+  ],
+  "skills": [
+    "Strategy",
+    "Product Management",
+    "Leadership",
+    "Communication",
+    "Analytics",
+    "Business Development"
+  ],
+  "languages": [
+    "English",
+    "Spanish",
+    "Portuguese"
+  ],
+  "certifications": []
+}

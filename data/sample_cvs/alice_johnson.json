@@ -1,0 +1,50 @@
+{
+  "name": "Alice Johnson",
+  "email": "alice.johnson@example.com",
+  "phone": "+1-555-0100",
+  "degree": "MS Computer Science",
+  "university": "MIT",
+  "graduation_year": 2018,
+  "years_experience": 7,
+  "current_role": "Senior ML Engineer",
+  "current_company": "TechCorp",
+  "experience": [
+    {
+      "company": "TechCorp",
+      "role": "Senior ML Engineer",
+      "duration_years": 2,
+      "duration_text": "2 years",
+      "description": "Led team of 5 engineers. Improved model performance 40%. Published 3 papers at top conferences.",
+      "impact": "High"
+    },
+    {
+      "company": "StartupXYZ",
+      "role": "ML Engineer",
+      "duration_years": 3,
+      "duration_text": "3 years",
+      "description": "Built end-to-end ML pipeline serving 10M+ users. Implemented recommendation system. Mentored 2 junior engineers.",
+      "impact": "High"
+    },
+    {
+      "company": "Google",
+      "role": "Associate Engineer",
+      "duration_years": 2,
+      "duration_text": "2 years",
+      "description": "Worked on search ranking algorithms. Implemented A/B testing framework.",
+      "impact": "Medium"
+    }
+  ],
+  "skills": [
+    "Python",
+    "TensorFlow",
+    "PyTorch",
+    "ML",
+    "Leadership",
+    "Mentoring"
+  ],
+  "languages": [
+    "English",
+    "Mandarin"
+  ],
+  "certifications": []
+}
